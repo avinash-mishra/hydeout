@@ -1,21 +1,26 @@
 <nav id="sidebar-icon-links">
-  {% if site.hydeout.repo %}
-    <a id="github-link"
-       class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.hydeout.repo }}">
-      {% include svg/github.svg %}
-    </a>
-    <a id="github-download-link"
-       class="icon" title="Download" aria-label="Download"
-       href="{{ site.hydeout.repo }}/archive/v{{ site.hydeout.version }}.zip">
-      {% include svg/download.svg %}
-    </a>
-  {% endif %}
+  <a id="github-link"
+     class="icon" title="Github Project" aria-label="Github Project"
+     href="https://github.com/avinash-mishra">
+    {% include svg/g4.svg %}
+  </a>
 
-  <a id="subscribe-link"
-     class="icon" title="Subscribe" aria-label="Subscribe"
-     href="{{ site.feed.path | default: 'feed.xml' | relative_url }}">
-    {% include svg/feed.svg %}
+  <a id="stackoverflow-link"
+     class="icon" title="Stackoverflow Profile" aria-label="Stackoverflow Profile"
+     href="https://stackoverflow.com/users/2737885/avinash?tab=profile">
+    {% include svg/so.svg %}
+  </a>
+
+  <a id="linkedin-link"
+     class="icon" title="Linkedin" aria-label="Linkedin"
+     href="https://www.linkedin.com/in/avinash-mishra-a0846360/">
+    {% include svg/linkedin.svg %}
+  </a>
+
+  <a id="hackerrank-link"
+     class="icon" title="HackerRank" aria-label="HackerRank"
+     href="https://www.hackerrank.com/leaderboard?filter=Japan&filter_on=country&page=1&track=java&type=practice">
+    {% include svg/hackerrank.svg %}
   </a>
 
   {% comment %}
